@@ -9,7 +9,7 @@ class DataProvider with ChangeNotifier {
   List<Data> datas = [];
 
   DataProvider({reference}) {
-    itemsReference = reference ?? FirebaseFirestore.instance.collection('items');
+    itemsReference = reference ?? FirebaseFirestore.instance.collection('datas');
   }
 
   Future<void> fetchItems() async {

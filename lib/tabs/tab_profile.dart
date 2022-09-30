@@ -13,7 +13,7 @@ class TapProfile extends StatelessWidget{
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text("Cart Profile"),
+          Text("Profile"),
           LoginOutButton(),
         ],
       ),

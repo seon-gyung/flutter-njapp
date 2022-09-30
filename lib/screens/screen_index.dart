@@ -26,6 +26,7 @@ class _IndexScreenState extends State<IndexScreen> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.indigo,
+        title: Text('NJ Test'),
       ),
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
