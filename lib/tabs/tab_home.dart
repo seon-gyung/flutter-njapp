@@ -9,6 +9,7 @@ class TabHome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final dataProvider = Provider.of<DataProvider>(context);
+    final sitecode = ;
 
     return FutureBuilder(
         future: dataProvider.fetchItems(),
@@ -18,16 +19,27 @@ class TabHome extends StatelessWidget {
               child: CircularProgressIndicator(),
             );
           } else {
-            return ListView.builder(
-              itemCount: dataProvider.datas.length,
-              itemBuilder: (context, id) {
-                return ListTile(
-                  title: Text(
+            return ListView(
+              children: <Widget>[
+                Container(
+                  child: Text(
+                    '사이트 명 : ' + dataProvider.,
+                    style: TextStyle(fontSize: 20),
+                  ),
+                ),
+                Container(
+                  child: Text(
                     '사이트 명 : ' + dataProvider.datas[id].siteCode,
                     style: TextStyle(fontSize: 20),
                   ),
-                );
-              },
+                ),
+                Container(
+                  child: Text(
+                    '사이트 명 : ' + dataProvider.datas[id].siteCode,
+                    style: TextStyle(fontSize: 20),
+                  ),
+                ),
+              ],
             );
           }
         });

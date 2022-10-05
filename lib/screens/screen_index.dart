@@ -15,6 +15,7 @@ class IndexScreen extends StatefulWidget {
 class _IndexScreenState extends State<IndexScreen> {
   int _currentIndex = 0;
 
+
   final List<Widget> tabs = [
     TabHome(),
     TabSetting(),
@@ -23,6 +24,8 @@ class _IndexScreenState extends State<IndexScreen> {
 
   @override
   Widget build(BuildContext context) {
+
+
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.indigo,

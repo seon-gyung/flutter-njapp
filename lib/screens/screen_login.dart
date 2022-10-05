@@ -15,6 +15,7 @@ class LoginScreen extends StatelessWidget {
         child: Scaffold(
           appBar: AppBar(
             backgroundColor: Colors.indigo,
+            title: Text('NJ Test'),
           ),
           body: Column(
             children: [
